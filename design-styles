@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+  #welcome-section h1 {
+  font-weight: 700;
+  font-size: 1rem;
+  }
+  #welcome-section h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: .3rem 0 .5rem 0;
+  }
+  #welcome-section p {
+  font-size: 1rem;
+  }
+}
+
+:root {
+  --white: #ffffff;
+  --red-background-gradient: linear-gradient(70deg, #F20041, #FF3500);
+  --red-pink: #DA003A;
+  --text-color: #1E181A;
+  --text-color-hover: #7A6D70;
+  --dark-background: #2B2B2F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+section, footer {
+  padding: 2rem 2rem;
+}
+
+#navbar {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  background-size: auto;
+  height: 10vh;
+  background: var(--white);
+  padding-right: 2rem;
+}
+
+.nav-link {
+  font-family: "Noto Sans Display",sans-serif;
+  font-style: normal;
+  font-size: .9rem;
+  color: var(--text-color)
+}
+
+.nav-link:hover {
+  color: var(--text-color-hover);
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: var(--red-background-gradient)
+}
+
+#welcome-section h1 {
+  color: var(--white);
+  font-family: "Noto Sans Display",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+
+#welcome-section h2 {
+  color: var(--white);
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding: .4rem 0 .7rem 0;
+}
+
+#welcome-section p {
+  color: var(--white);
+  font-family: "Noto Sans Display",sans-serif;
+  font-style: normal;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 420px;
+}
+
+h3 {
+  font-family: "Noto Sans Display",sans-serif;
+  font-style: normal;
+  font-size: 1.3rem;
+  padding: 0 0 1.2rem 0;
+  color: var(--text-color);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  /* For responsive column resizing, use this:
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  grid-template-rows: 1fr;
+  gap: 1.4rem;
+}
+
+.project {
+  height: 40vh;
+  background-color: pink;
+}
+
+#contact, footer {
+  background-color: var(--dark-background);
+}
+
+#contact-title, #profile-link {
+  color: var(--white);
+}
+
+footer p {
+  color: var(--white);
+  font-family: "Noto Sans Display",sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: .7rem;
+}
